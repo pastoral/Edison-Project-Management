@@ -1,0 +1,14 @@
+<h1>New SW Version</h1>
+<%= form_for :sw_version, url: sw_versions_path do |f| %>
+	<p>
+		<%= f.label :swversion, "SW Version" %>
+		<%= f.text_field :swversion %>
+	</p>
+	<p>
+		<%= f.label :description, "Description" %>
+		<%= f.text_area :description %>
+	</p>
+	<p>
+		<%= f.submit "Submit" %>
+	</p>
+<% end %>
