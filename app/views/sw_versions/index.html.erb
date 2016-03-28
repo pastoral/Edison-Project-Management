@@ -1,0 +1,18 @@
+<h2>All SW versions : </h2>
+<br>
+<table>
+	<tr>
+		<th>
+			SW Version
+		</th>
+		<th>
+			Description
+		</th>
+	</tr>
+	<% @showAllSwVersion.each do |swversion| %>
+		<tr>
+			<td><%= swversion.swversion %></td>
+			<td><%= swversion.description %></td>
+		</tr>
+	<% end %>
+</table>

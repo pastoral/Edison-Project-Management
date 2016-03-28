@@ -1,9 +1,9 @@
 class SwVersionsController < ApplicationController
 	def index
-
+		@showAllSwVersion = SwVersion.all
 	end
 	def show
-		@swversion = SwVersion.find(params[:id])
+		@showswversion = SwVersion.find(params[:id])
 
 	end
 	def new
@@ -15,7 +15,7 @@ class SwVersionsController < ApplicationController
 		#@swversion = SwVersion.new(params[:swversion])
 		@swversion = SwVersion.new(sw_version_params)
 		@swversion.save
-		redirect_to @swversion
+		#redirect_to @swversion
 	end
 
 	private
